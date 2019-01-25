@@ -20,40 +20,7 @@
                                 title: t("shared.go_to_page") + t("layouts.header.proposals") %>
       </li>
     <% end %>
-    <% if feature?(:polls) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.poll_questions"),
-                                  polls_path,
-                                  controller_name == "polls" || (controller_name == "questions" && controller.class.parent == Polls),
-                                  accesskey: "3",
-                                  title: t("shared.go_to_page") + t("layouts.header.poll_questions") %>
-      </li>
-    <% end %>
-    <% if feature?(:legislation) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.collaborative_legislation"),
-                                legislation_processes_path,
-                                controller.class.parent == Legislation,
-                                accesskey: "4" %>
-      </li>
-    <% end %>
-    <% if feature?(:spending_proposals) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.spending_proposals"),
-                                  spending_proposals_path,
-                                  controller_name == 'spending_proposals',
-                                  accesskey: "s" %>
-      </li>
-    <% end %>
-    <% if feature?(:budgets) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.budgets"),
-                                  budgets_path,
-                                  controller_name == "budgets" || controller_name == "investments",
-                                  accesskey: "5",
-                                  title: t("shared.go_to_page") + t("layouts.header.budgets") %>
-      </li>
-    <% end %>
+
     <% if feature?(:help_page) %>
       <li>
         <%= layout_menu_link_to t("layouts.header.help"),
