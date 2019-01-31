@@ -583,6 +583,7 @@ header {
 
   .top-bar-title {
     line-height: $line-height;
+    letter-spacing: .1em !important;
 
     a img {
       height: rem-calc(48);
