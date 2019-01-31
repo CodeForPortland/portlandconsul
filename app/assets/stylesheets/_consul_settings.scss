@@ -17,6 +17,7 @@ $line-height:         rem-calc(24);
 $tiny-font-size:      rem-calc(12);
 
 $brand:             #003661;
+$brand-gradient:    linear-gradient(#72c79c,#003661);
 $dark:              darken($brand, 10%);
 
 $text:              #222;
@@ -71,9 +72,9 @@ $color-alert:       #a94442;
 $black: #222;
 $white: #fff;
 
-$body-font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif !important;
+$body-font-family: 'Libre Franklin', 'Helvetica', 'Arial', sans-serif !important;
 
-$header-font-family: $body-font-family;
+$header-font-family: 'Fjalla One', sans-serif;
 
 $global-radius: rem-calc(3);
 

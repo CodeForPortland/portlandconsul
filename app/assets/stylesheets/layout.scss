@@ -481,7 +481,7 @@ header {
 }
 
 .top-bar {
-  background: linear-gradient(#72c79c,#003661) !important;
+  background: $brand !important;
   color: #fff;
   padding-bottom: 0;
   padding-top: 0;
@@ -621,7 +621,7 @@ header {
 }
 
 .top-links {
-  background: $dark;
+  background: $brand-gradient;
   color: #fff;
   font-size: $small-font-size;
   padding-right: $line-height / 2;
