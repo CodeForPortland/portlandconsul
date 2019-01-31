@@ -125,7 +125,7 @@ en:
         one: " containing the term <strong>'%{search_term}'</strong>"
         other: " containing the term <strong>'%{search_term}'</strong>"
       select_order: Order by
-      start_debate: Start a debate
+      start_debate: Start a discussion
       title: Debates
       section_header:
         icon_alt: Debates icon
