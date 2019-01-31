@@ -119,7 +119,7 @@ en:
           error: "An error has occured. Please go to 'My account' page to manually disable recommendations for debates"
       search_form:
         button: Search
-        placeholder: Search debates...
+        placeholder: Search Community Forum...
         title: Search
       search_results_html:
         one: " containing the term <strong>'%{search_term}'</strong>"
