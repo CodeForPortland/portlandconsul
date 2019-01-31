@@ -15,8 +15,8 @@ feature "Admin custom information texts" do
   scenario 'page is correctly loaded' do
     visit admin_site_customization_information_texts_path
 
-    click_link 'Debates'
-    expect(page).to have_content 'Help about debates'
+    click_link 'Community Forum'
+    expect(page).to have_content 'Help about the community forum'
 
     click_link 'Community'
     expect(page).to have_content 'Access the community'
