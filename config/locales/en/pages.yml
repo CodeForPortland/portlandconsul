@@ -8,24 +8,26 @@ en:
       title: "%{org} is a platform for citizen participation"
       guide: "This guide explains what each of the %{org} sections are for and how they work."
       menu:
-        debates: "Debates"
+        debates: "Community Forum"
         proposals: "Proposals"
         budgets: "Participatory budgets"
-        polls: "Polls"
+        polls: "Voting"
         other: "Other information of interest"
-        processes: "Processes"
+        processes: "Open Source Software"
       debates:
-        title: "Debates"
-        description: "In the %{link} section you can present and share your opinion with other people on issues of concern to you related to the city. It is also a place to generate ideas that through the other sections of %{org} lead to concrete actions by the City Council."
-        link: "citizen debates"
-        feature_html: "You can open debates, comment and evaluate them with the <strong>I agree</strong> or <strong>I don't agree</strong>. For that you have to %{link}."
-        feature_link: "register in %{org}"
+        title: "Community Forum"
+        description: "This is a %{link} to develop your ideas through community collaboration, generating local actions and improving potential projects so further development in the other sections can lead to proposals that meet the approval of the community panel and the mayor. Please contribute ideas, strategy, and suggestions for how people can work together to create green infrastructure and inclusive communities."
+        link: "forum"
+        feature_html: "Collaborate on making a just transition to the clean energy economy. Plan activities to form bonds of reciprocity and solidarity, arranging events where people can meet and feel integrated in a moral community whose purpose is the systemic transformation of society. Help each other online with the up or down button and considerate suggestions for improvement. To join the Community Forum, create a %{link}."
+        feature_link: "personal account"
         image_alt: "Buttons to rate the debates"
-        figcaption: '"I agree" and "I disagree" buttons to rate the debates.'
+        figcaption: '"I agree" and "I disagree" buttons to rate the community forum.'
       proposals:
         title: "Proposals"
-        description: "In the %{link} section you can make proposals for the City Council to carry them out. The proposals require support, and if they reach sufficient support, they are put to a public vote. The proposals approved in these citizens' votes are accepted by the City Council and carried out."
-        link: "citizen proposals"
+        description1: "In the %{link} section you make proposals for projects that fit the mission of the Portland Clean Energy Fund. The proposals require support to receive funding. If they gain the support of ten percent of Portlanders who participated in the previous round of voting, the projects advance to Voting. The proposals approved by the voters on this platform are then assessed by the nine-member community panel who evaluate proposals and make their recommendations to the mayor for how to distribute funds."
+
+        description2: "To create a proposal you must register a personal account and certify yourself as a resident of Portland. To support proposals it is also necessary to verify your account."
+        link: "proposals"
         image_alt: "Button to support a proposal"
         figcaption_html: 'Button to "Support" a proposal.'
       budgets:
@@ -35,14 +37,22 @@ en:
         image_alt: "Different phases of a participatory budget"
         figcaption_html: '"Support" and "Voting" phases of participatory budgets.'
       polls:
-        title: "Polls"
-        description: "The %{link} section is activated each time a proposal reaches 1% support and goes to the vote or when the City Council proposes an issue for people to decide on."
-        link: "polls"
+        title: "Voting"
+        description1: "%{link} you vote for or against a proposed project. The proposals that receive more votes in favor are reviewed first and foremost by the nine-member community panel who make recommendations to the mayor for how the funds will be distributed. Please review the text of the city ordinance of the [Portland Clean Energy Fund] to guide your decisions when weighing whether a proposal fits the intention of the measure."
+
+        description2: "Voting is open to all who are at least 16 years old and residents of Portland. To vote you must first create an account and verify your identity. Credibility of the voting process depends on the ability to verify each participant’s identity. After you sign in, enter the one-time password sent by short message service (SMS). This allows one vote on each proposal for each resident."
+
+        description3: "New proposals enter Voting every Thursday at 4:00pm and participants have one week to vote on those projects before the next round of voting begins."
+        link: "Here"
         feature_1: "To participate in the voting you have to %{link} and verify your account."
-        feature_1_link: "register in %{org_name}"
+        feature_1_link: "create a personal account"
       processes:
-        title: "Processes"
-        description: "In the %{link} section, citizens participate in the drafting and modification of regulations affecting the city and can give their opinion on municipal policies in previous debates."
+        title: "Open Source Software"
+        description1: "The Portland Clean Energy Fund participation platform uses [CONSUL] free and open source software licensed under the AGPLv3. This license signifies anyone can freely use the code, copy it, look at it in detail, modify and redistribute it to the world with whatever changes they want (allowing others to do the same). Cities and organizations can use and improve the software, upgrade and share it, without paying annual licenses for proprietary intellectual property."
+
+        description2: "CONSUL has been adopted throughout the Spanish-speaking countries and maintained by developers working with the City of Madrid. The software has roots in the spring 2011 movement for real democracy in Madrid known for the May 15th day of action that catalyzed people, led to organizing and, eventually, elected office. Through a new office of citizen participation, the City of Madrid in 2015 launched its online decision-making platform Decide Madrid using the CONSUL software."
+
+        description3: "In 2018, CONSUL won a [United Nation Public Service Award], and beginning in 2019 New York City became the first in the United States to use the software for its [participatory budgeting process]. Civic technology involves the community in projects for the public good. Adapting CONSUL for the Portland Clean Energy Fund has involved the local community, including volunteers from Code for PDX and Latinx Tech PDX."
         link: "processes"
       faq:
         title: "Technical problems?"
