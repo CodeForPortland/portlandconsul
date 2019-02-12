@@ -130,7 +130,7 @@ en:
       section_header:
         icon_alt: Debates icon
         title: Climate Justice
-        help: Help about the community forum
+        help: Help with climate justice
       section_footer:
         title: Help with climate justice
         description: This forum for climate justice is for everyone to explore and discover how we can work together to reduce greenhouse gas emissions, increase energy efficiency, and create opportunities for workforce training to empower people of color and historically marginalized communities in the clean energy economy.
@@ -384,10 +384,28 @@ en:
       section_header:
         icon_alt: Proposals icon
         title: Proposals
-        help: Help about proposals
+        help: Help with project proposals
       section_footer:
-        title: Help about proposals
-        description: Citizens' proposals are an opportunity for neighbours and collectives to decide directly how they want their city to be, after getting sufficient support and submitting to a citizens' vote.
+        title: Help with project proposals
+        description1: "%{org} with your email and password to create an account and certify yourself as a resident of Portland. To create or support proposals it is necessary to have a verified account."
+        description2: "Read and evaluate proposals for transitioning to a clean energy economy and click Support when you think a project merits consideration by other people in the community. Before you create a proposal, please review the [ordinance] to understand and best articulate how your project aligns with the mission of the Portland Clean Energy Fund. If you are unsure the [Community Forum] can help."
+        description3: "After clicking “Create a proposal” in the upper right of this page, describe your project with a title, short summary, and explanation. You can link to videos from YouTube or Vimeo that support your proposal and include images and pdf documents. Use all or only some of the document types, depending on the needs of your project and the documents you have. The project area can be identified by selecting: All city, SE, SW, NW, NE, N, or choosing from the list of neighborhoods. And for specific locations, use the map to navigate and place the marker."
+        description4: "To help the community discover similar efforts, select Tags that match your project. Click on the pre-existing Categories to tag your proposal. And if one doesn’t yet exist, create a new one specific to your project. Tags include broad categories such as Weatherization, Heating, Cooling, and more specific items like Shared Electric Metrofiet."
+        description5: "Any resident of Portland can make a proposal for how to distribute funds, and if it receives the support of ten percent of the Portlanders registered here, the proposal will progress to the [Voting] phase. After a citywide vote, the appointed members of the community panel will vet proposals that fulfill the mandate of the Portland Clean Energy Fund and recommend to the mayor how to distribute funds—the money enters Portland’s economy as grants to Oregon nonprofit organizations."
+        description6: "The community panel recommends projects that are feasible and that fit the mandate for:"
+        description7: "*Clean Energy Projects* (approximately 50–75%): renewable energy, energy efficiency and green infrastructure projects, such as:"
+        description8: "Energy not produced from fossil fuels, nuclear power, or certain hydropower"
+        description9: "Heating, lighting, water, cooling efficiencies"
+        description10: "Green building design"
+        description11: "Tree canopy"
+        description12: "*Clean Energy Jobs Training* (approximately 20–25%): training that prioritizes workforce development for traditionally underemployed, economically disadvantaged workers, including:"
+        description13: "Communities of color"
+        description14: "Women"
+        description15: "Persons with disabilities"
+        description16: "Chronically underemployed"
+        description17: "*Future Innovation* (approximately 5%)"
+        description18: ""
+        description19: ""
     new:
       form:
         submit_button: Create proposal

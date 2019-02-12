@@ -4,7 +4,11 @@
       <%= t("pages.help.proposals.title") %>
     </h3>
     <p>
-      <%= t("pages.help.proposals.description",
+      <%= t("pages.help.proposals.description1",
+              link: link_to(t("pages.help.proposals.link"), proposals_path)).html_safe %>
+    </p>
+    <p>
+      <%= t("pages.help.proposals.description2",
               link: link_to(t("pages.help.proposals.link"), proposals_path)).html_safe %>
     </p>
 

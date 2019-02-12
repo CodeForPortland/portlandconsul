@@ -2,7 +2,15 @@
   <div class="small-12 column">
     <h3 id="polls" data-magellan-target="polls"><%= t("pages.help.polls.title") %></h3>
     <p>
-      <%= t("pages.help.polls.description",
+      <%= t("pages.help.polls.description1",
+            link: link_to(t("pages.help.polls.link"), polls_path)).html_safe %>
+    </p>
+    <p>
+      <%= t("pages.help.polls.description2",
+            link: link_to(t("pages.help.polls.link"), polls_path)).html_safe %>
+    </p>
+    <p>
+      <%= t("pages.help.polls.description3",
             link: link_to(t("pages.help.polls.link"), polls_path)).html_safe %>
     </p>
     <ul class="features">

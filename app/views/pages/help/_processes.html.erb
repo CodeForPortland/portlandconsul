@@ -6,12 +6,13 @@
 
     <p>
       <% link = link_to(t("pages.help.processes.link"), legislation_processes_path) %>
-      <%= t("pages.help.processes.description", link: link).html_safe %>
+      <%= t("pages.help.processes.description1", link: link).html_safe %>
     </p>
-    <ul class="features">
-      <li>
-        <% link = link_to(t("pages.help.processes.link"), legislation_processes_path) %>
-      </li>
-    </ul>
+    <p>
+      <%= t("pages.help.processes.description2", link: link).html_safe %>
+    </p>
+    <p>
+      <%= t("pages.help.processes.description3", link: link).html_safe %>
+    </p>
   </div>
 </div>
