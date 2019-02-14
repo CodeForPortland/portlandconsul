@@ -38,12 +38,15 @@ en:
         figcaption_html: '"Support" and "Voting" phases of participatory budgets.'
       polls:
         title: "Voting"
-        description1: "%{link} you vote for or against a proposed project. The proposals that receive more votes in favor are reviewed first and foremost by the nine-member community panel who make recommendations to the mayor for how the funds will be distributed. Please review the text of the city ordinance of the [Portland Clean Energy Fund] to guide your decisions when weighing whether a proposal fits the intention of the measure."
+        description1: "%{link} you vote for or against a proposed project. The proposals that receive more votes in favor are reviewed first and foremost by the nine-member community panel who make recommendations to the mayor for how the funds will be distributed."
 
-        description2: "Voting is open to all who are at least 16 years old and residents of Portland. To vote you must first create an account and verify your identity. Credibility of the voting process depends on the ability to verify each participant’s identity. After you sign in, enter the one-time password sent by short message service (SMS). This allows one vote on each proposal for each resident."
+        description2: "Please review the text of the city ordinance of the %{link2} to guide your decisions when weighing whether a proposal fits the intention of the measure."
 
-        description3: "New proposals enter Voting every Thursday at 4:00pm and participants have one week to vote on those projects before the next round of voting begins."
+        description3: "Voting is open to all who are at least 16 years old and residents of Portland. To vote you must first create an account and verify your identity. Credibility of the voting process depends on the ability to verify each participant’s identity. After you sign in, enter the one-time password sent by short message service (SMS). This allows one vote on each proposal for each resident."
+
+        description4: "New proposals enter Voting every Thursday at 4:00pm and participants have one week to vote on those projects before the next round of voting begins."
         link: "Here"
+        link2: "Portland Clean Energy Fund"
         feature_1: "To participate in the voting you have to %{link} and verify your account."
         feature_1_link: "create a personal account"
       processes:

@@ -3,22 +3,19 @@
     <h3 id="polls" data-magellan-target="polls"><%= t("pages.help.polls.title") %></h3>
     <p>
       <%= t("pages.help.polls.description1",
-            link: link_to(t("pages.help.polls.link"), polls_path)).html_safe %>
-    </p>
-    <p>
+            link: link_to(t("pages.help.polls.link"),
+            polls_path)).html_safe %>
       <%= t("pages.help.polls.description2",
-            link: link_to(t("pages.help.polls.link"), polls_path)).html_safe %>
+            link2: link_to(t("pages.help.polls.link2"),
+            "https://www.portlandoregon.gov/auditor/article/674246", target: :_blank)).html_safe %>
     </p>
     <p>
       <%= t("pages.help.polls.description3",
             link: link_to(t("pages.help.polls.link"), polls_path)).html_safe %>
     </p>
-    <ul class="features">
-      <li>
-        <%= t("pages.help.polls.feature_1",
-              link: link_to(t("pages.help.polls.feature_1_link", org_name: setting['org_name']),
-                               new_user_registration_path)).html_safe %>
-      </li>
-    </ul>
+    <p>
+      <%= t("pages.help.polls.description4",
+            link: link_to(t("pages.help.polls.link"), polls_path)).html_safe %>
+    </p>
   </div>
 </div>
