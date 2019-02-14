@@ -59,10 +59,10 @@ Setting["opendata_url"] = "/opendata"
 Setting["url"] = "http://example.com"
 
 # CONSUL installation's organization name
-Setting["org_name"] = "CONSUL"
+Setting["org_name"] = "Portland Clean Energy Fund"
 
 # CONSUL installation place name (City, Country...)
-Setting["place_name"] = "CONSUL-land"
+Setting["place_name"] = "Portland"
 
 # Meta tags for SEO
 Setting["meta_title"] = nil
