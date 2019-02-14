@@ -6,13 +6,15 @@
 
     <p>
       <% link = link_to(t("pages.help.processes.link"), legislation_processes_path) %>
-      <%= t("pages.help.processes.description1", link: link).html_safe %>
-    </p>
-    <p>
+      <%= t("pages.help.processes.description1", link2: link_to(t("pages.help.processes.link2"), "http://consulproject.org/en/", target: :_blank)).html_safe %>
       <%= t("pages.help.processes.description2", link: link).html_safe %>
     </p>
     <p>
       <%= t("pages.help.processes.description3", link: link).html_safe %>
+    </p>
+    <p>
+      <%= t("pages.help.processes.description4", link3: link_to(t("pages.help.processes.link3"), "http://workspace.unpan.org/sites/Internet/Documents/2018%20%20Winners%20with%20short%20paragraph_rev%20OD_EN_Clean.docx.pdf", target: :_blank)).html_safe %>
+      <%= t("pages.help.processes.description5", link4: link_to(t("pages.help.processes.link4"), "https://pbnyc.participatorybudgeting.org/budgets", target: :_blank)).html_safe %>
     </p>
   </div>
 </div>

@@ -51,12 +51,18 @@ en:
         feature_1_link: "create a personal account"
       processes:
         title: "Open Source Software"
-        description1: "The Portland Clean Energy Fund participation platform uses [CONSUL] free and open source software licensed under the AGPLv3. This license signifies anyone can freely use the code, copy it, look at it in detail, modify and redistribute it to the world with whatever changes they want (allowing others to do the same). Cities and organizations can use and improve the software, upgrade and share it, without paying annual licenses for proprietary intellectual property."
+        description1: "The Portland Clean Energy Fund participation platform uses %{link2} free and open source software licensed under the AGPLv3."
 
-        description2: "CONSUL has been adopted throughout the Spanish-speaking countries and maintained by developers working with the City of Madrid. The software has roots in the spring 2011 movement for real democracy in Madrid known for the May 15th day of action that catalyzed people, led to organizing and, eventually, elected office. Through a new office of citizen participation, the City of Madrid in 2015 launched its online decision-making platform Decide Madrid using the CONSUL software."
+        description2: "This license signifies anyone can freely use the code, copy it, look at it in detail, modify and redistribute it to the world with whatever changes they want (allowing others to do the same). Cities and organizations can use and improve the software, upgrade and share it, without paying annual licenses for proprietary intellectual property."
 
-        description3: "In 2018, CONSUL won a [United Nation Public Service Award], and beginning in 2019 New York City became the first in the United States to use the software for its [participatory budgeting process]. Civic technology involves the community in projects for the public good. Adapting CONSUL for the Portland Clean Energy Fund has involved the local community, including volunteers from Code for PDX and Latinx Tech PDX."
+        description3: "CONSUL has been adopted throughout the Spanish-speaking countries and maintained by developers working with the City of Madrid. The software has roots in the spring 2011 movement for real democracy in Madrid known for the May 15th day of action that catalyzed people, led to organizing and, eventually, elected office. Through a new office of citizen participation, the City of Madrid in 2015 launched its online decision-making platform Decide Madrid using the CONSUL software."
+
+        description4: "In 2018, CONSUL won a %{link3}, and beginning in 2019 New York City became the"
+        description5: "first in the United States to use the software for its %{link4}. Civic technology involves the community in projects for the public good. Adapting CONSUL for the Portland Clean Energy Fund has involved the local community, including volunteers from Code for PDX and Latinx Tech PDX."
         link: "processes"
+        link2: "CONSUL"
+        link3: "United Nation Public Service Award"
+        link4: "participatory budgeting process"
       faq:
         title: "Technical problems?"
         description: "Read the FAQs and solve your questions."
