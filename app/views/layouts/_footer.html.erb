@@ -14,7 +14,7 @@
       </p>
     </div>
 
-    <div class="footer-sections small-12 large-8 column">
+    <div class="footer-sections small-12 large-5 column">
       <div class="small-12 medium-4 column">
         <%= link_to t("layouts.footer.participation_title"), root_path, class: "title" %>
         <p><%= t("layouts.footer.participation_text") %></p>
@@ -22,7 +22,15 @@
     </div>
   </div>
 
+
   <div class="subfooter row">
+    
+    <div class="small-12 medium-8 column">
+      <p>
+        <%= link_to 'The Portland Clean Energy Fund', 'https://www.portlandcleanenergyinitiative.com/', style: "text-decoration: none;", target: '_blank' %>
+      </p>
+    </div>
+    
     <div class="small-12 medium-8 column">
       <%= t("layouts.footer.copyright", year: Time.current.year) %>&nbsp;|
       <ul class="no-bullet inline-block">
@@ -89,9 +97,18 @@
               <% end %>
             </li>
           <% end %>
+
           <%= raw content_block("footer", I18n.locale) %>
         </ul>
       </div>
+
+
     </div>
+    <div class="large-12 column" style="text-align: center;">
+    <%= link_to 'http://www.codeforpdx.org', target: '_blank', style: "text-decoration: none;" do %>
+      <%= image_tag 'logo_color', width: '50px', height: '50px' %>
+      <p> A Code for PDX Project</p>
+    <% end %>
+  </div>
   </div>
 </footer>

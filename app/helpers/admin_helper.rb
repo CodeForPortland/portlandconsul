@@ -1,5 +1,5 @@
 module AdminHelper
-
+  
   def side_menu
     if namespace == 'moderation/budgets'
       render "/moderation/menu"
