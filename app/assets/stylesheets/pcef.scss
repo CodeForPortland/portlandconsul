@@ -1,0 +1,16 @@
+
+//custom classes for Portland Clean Energy Fund 
+
+.pcef_logo {
+    a {
+        text-shadow: 1px 1px 2px #0090B2;
+        color: rgb(250, 253, 253);
+        
+        &:hover {
+            text-shadow: 1px 1px 2px rgb(12, 92, 110);
+            text-decoration: none;
+        }
+        
+      }
+ 
+}
