@@ -7,7 +7,7 @@ en:
       erase_account_link: Erase my account
       finish_verification: Complete verification
       notifications: Notifications
-      organization_name_label: Name of organization
+      organization_name_label: Portland Clean Energy Fund
       organization_responsible_name_placeholder: Representative of the organization/collective
       personal: Personal details
       phone_number_label: Phone number
@@ -201,20 +201,19 @@ en:
       ie: We have detected that you are browsing with Internet Explorer. For an enhanced experience, we recommend using %{firefox} or %{chrome}.
       ie_title: This website is not optimised for your browser
     footer:
-      
       pcef: Portland Clean Energy Fund 
-      pcef_url: http://www.portlandcleanenergyinitiative.com 
+      pcef_url: https://www.portlandcleanenergyinitiative.com/
       cforpdx: Code for PDX
       cforpdx_url: http://www.codeforpdx.org
       latinxtech: Latinx Tech PDX
       latinxtech_url: http://www.meetup.com/LatinxTechPDX/ 
       accessibility: Accessibility
-      conditions: Terms and conditions of use
+      conditions: Terms and Conditions of Use
       consul: CONSUL
       consul_url: http://www.consulproject.org
       contact_us: For technical assistance visit
-      copyright: CONSUL, %{year}
-      description: This portal uses the %{consul} open source software. Adapting %{consul} for the  has involved the local community, including volunteers from %{cforpdx} and %{latinxtech}.
+      copyright: City of Portland, %{year}
+      description: This portal uses the %{consul} open source software. Adapting %{consul} for the %{pcef} has involved the local community, including volunteers from %{cforpdx} and %{latinxtech}.
       open_source: open-source software
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: A commitment to low-income people and communities of color. Help identify proposals for the Portland Clean Energy Fund.

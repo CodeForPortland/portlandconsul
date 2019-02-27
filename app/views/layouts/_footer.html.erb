@@ -8,13 +8,14 @@
       <p class="info">
         <%= t("layouts.footer.description",
           open_source: link_to(t("layouts.footer.open_source"), t("layouts.footer.open_source_url"), target: "blank", rel: "nofollow"),
+          pcef: link_to(t("layouts.footer.pcef"), t("layouts.footer.pcef_url"), target: "blank", rel: "nofollow"),
           consul:  link_to(t("layouts.footer.consul"), t("layouts.footer.consul_url"), target: "blank", rel: "nofollow"),
           cforpdx: link_to(t("layouts.footer.cforpdx"), t("layouts.footer.cforpdx_url"), target: "blank", rel: "nofollow"),
           latinxtech: link_to(t("layouts.footer.latinxtech"), t("layouts.footer.latinxtech_url"), target: "blank", rel: "nofollow")
           ).html_safe
           
         %>
-        <%= t("layouts.footer.contact_us") %>
+     
       </p>
     </div>
 
@@ -52,24 +53,23 @@
       </ul>
     </div>
 
-    <div class="small-12 medium-4 column social">
+    <div class="small-12 medium-4 column ">
       <div class="text-right">
         <ul>
           <% if setting['twitter_handle'] %>
             <li class="inline-block">
-              <%= link_to "https://twitter.com/#{setting['twitter_handle']}", target: "_blank", rel: "noopener external",
-                           title: t("shared.go_to_page") + t("social.twitter", org: setting['org_name']) + t('shared.target_blank_html') do %>
-                              <span class="show-for-sr"><%= t("social.twitter", org: setting['org_name']) %></span>
-                              <span class="icon-twitter" aria-hidden="true"></span>
-              <% end %>
+              <%= link_to "Twitter", "https://twitter.com/#{setting['twitter_handle']}", target: "_blank", rel: "noopener external",
+                           title: t("shared.go_to_page") + t("social.twitter", org: setting['org_name']) + t('shared.target_blank_html') %>
+              
             </li>
+            <span> | </span>
           <% end %>
           <% if setting['facebook_handle'] %>
             <li class="inline-block">
               <%= link_to "https://www.facebook.com/#{setting['facebook_handle']}/", target: "_blank", rel: "noopener external",
                           title: t("shared.go_to_page") + t("social.facebook", org: setting['org_name']) + t('shared.target_blank_html') do %>
                           <span class="show-for-sr"><%= t("social.facebook", org: setting['org_name']) %></span>
-                          <span class="icon-facebook" aria-hidden="true"></span>
+                          <span class="p" aria-hidden="true">Facebook</span>
               <% end %>
             </li>
           <% end %>

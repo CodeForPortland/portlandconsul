@@ -4,4 +4,6 @@ module SettingsHelper
     Setting.where(key: 'feature.user.recommendations').first
   end
 
+  
+
 end

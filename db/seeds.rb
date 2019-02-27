@@ -45,9 +45,9 @@ Setting['per_page_code_head'] = ''
 Setting['per_page_code_body'] = ''
 
 # Social settings
-Setting["twitter_handle"] = nil
-Setting["twitter_hashtag"] = nil
-Setting["facebook_handle"] = nil
+Setting["twitter_handle"] = 'pdxcleanenergy'
+Setting["twitter_hashtag"] = '#pdxcleanenergy'
+Setting["facebook_handle"] = 'pdxcleanenergy'
 Setting["youtube_handle"] = nil
 Setting["telegram_handle"] = nil
 Setting["instagram_handle"] = nil
