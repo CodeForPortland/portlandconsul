@@ -201,17 +201,28 @@ en:
       ie: We have detected that you are browsing with Internet Explorer. For an enhanced experience, we recommend using %{firefox} or %{chrome}.
       ie_title: This website is not optimised for your browser
     footer:
+      
+      pcef: Portland Clean Energy Fund 
+      pcef_url: http://www.portlandcleanenergyinitiative.com 
+      cforpdx: Code for PDX
+      cforpdx_url: http://www.codeforpdx.org
+      latinxtech: Latinx Tech PDX
+      latinxtech_url: http://www.meetup.com/LatinxTechPDX/ 
       accessibility: Accessibility
       conditions: Terms and conditions of use
-      consul: CONSUL application
-      consul_url: https://github.com/consul/consul
+      consul: CONSUL
+      consul_url: http://www.consulproject.org
       contact_us: For technical assistance visit
       copyright: CONSUL, %{year}
-      description: This portal uses the %{consul} which is %{open_source}.
+      description: This portal uses the %{consul} open source software. Adapting %{consul} for the  has involved the local community, including volunteers from %{cforpdx} and %{latinxtech}.
       open_source: open-source software
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
-      participation_text: Decide how to shape the city you want to live in.
+      participation_text: A commitment to low-income people and communities of color. Help identify proposals for the Portland Clean Energy Fund.
       participation_title: Participation
+      transparency_title: Transparency
+      transparency_text: Learn about the nine-member community panel and the City of Portland ordinance regulating the fund.
+      opendata_text: Every detail about the allocation of funds is yours to access.
+      opendata_title: Open Data
       privacy: Privacy Policy
     header:
       administration_menu: Admin
