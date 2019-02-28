@@ -37,7 +37,35 @@
       <p class="lead">
         <strong><%= t("polls.index.section_footer.title") %></strong>
       </p>
-      <p><%= t("polls.index.section_footer.description") %></p>
+
+      <div class="voting_info">
+        <p>
+          <%= t('polls.index.voting_info.paragraph1',
+                sign_in_link: link_to(
+                  t('polls.index.voting_info.sign_in'),
+                  new_user_session_path,
+                  class: "content-link"
+                )
+              ).html_safe
+          %>
+        </p>
+
+        <p><%= t("polls.index.voting_info.paragraph2") %></p>
+        <p><%= t("polls.index.voting_info.paragraph3") %></p>
+        <p><%= t("polls.index.voting_info.paragraph4") %></p>
+        <p><%= t("polls.index.voting_info.paragraph5") %></p>
+        <p>
+          <%= t('polls.index.voting_info.paragraph6',
+                register_link: link_to(
+                  t('polls.index.voting_info.register'),
+                  new_user_registration_path,
+                  class: "content-link"
+                )
+              ).html_safe
+          %>
+        </p>
+      </div>
+
     </div>
   </div>
 </div>

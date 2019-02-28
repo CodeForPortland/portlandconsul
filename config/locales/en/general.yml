@@ -479,6 +479,15 @@ en:
     dates: "From %{open_at} to %{closed_at}"
     final_date: "Final recounts/Results"
     index:
+      voting_info:
+        sign_in: Sign in
+        register: Register
+        paragraph1: " %{sign_in_link} to vote on project proposals. Anyone over 16 years old who resides in Portland can vote. After your identity has been authenticated, a one-time code will be sent by text. Enter that into “My code” on your personal account."
+        paragraph2: This process verifies that each account corresponds to an individual resident. Each person uses their actual first and last name. Your information is compared with the municipal register and after confirming you live in Portland, then a secure personal code to verify your account is sent through SMS to your mobile phone number. People are known here by their real names to maintain an online public forum where participants are accountable to each other.
+        paragraph3: After proposals receive the support of ten percent of Portlanders who voted the previous round, on Thursday at 4:00pm those projects enter the voting phase and people have one week to vote for or against a proposed project.
+        paragraph4: The proposals that have qualified get listed in Voting once a week at the same hour, the same day. If you turn on your notifications, you will receive a reminder to vote Thursday. Rather than a notification for each proposal, and returning each time, posting in a batch allows people to get notified when voting happens while being respectful of busy schedules and reducing the number of notifications. Posting the new proposals that qualify for Voting on the same day and hour of each week also introduces a regularity to the activity to encourage returning and engaging in proactive climate actions.
+        paragraph5: Your votes identify which proposals the nine-member community panel will assess first and foremost. Votes are secret and encrypted. Voting takes place citywide and all residents are encouraged to learn about and contribute to projects happening throughout Portland.
+        paragraph6: "%{register_link} to be able to vote on proposals and contribute in the forum."
       filters:
         current: "Open"
         incoming: "Incoming"
@@ -496,10 +505,10 @@ en:
       cant_answer: "This poll is not available on your geozone"
       section_header:
         icon_alt: Voting icon
-        title: Voting
-        help: Help about voting
+        title: Portland Votes
+        help: Help with voting
       section_footer:
-        title: Help about voting
+        title: Help with voting
         description: Citizens' polls are a participatory mechanism by which citizens with voting rights can make direct decisions
       no_polls: "There are no open votings."
     show:
