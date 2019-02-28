@@ -102,7 +102,23 @@
             </p>
             <p><%= t("proposals.index.section_footer.description1",
                       org: link_to(setting["org_name"], new_user_registration_path)).html_safe %></p>
-            <p><%= t("proposals.index.section_footer.description2") %></p>
+            <p>
+              <%= t('proposals.index.section_footer.description2',
+                    ordinance_link: link_to(
+                      t('proposals.index.section_footer.ordinance'),
+                      "https://www.portlandoregon.gov/revenue/article/707697",
+                      target: "_blank",
+                      rel: "noopener external",
+                      class: "content-link"
+                    ),
+                    community_forum_link: link_to(
+                      t('proposals.index.section_footer.community_forum'),
+                      debates_path,
+                      class: "content-link"
+                    )
+                  ).html_safe
+              %>
+            </p>
             <p><%= t("proposals.index.section_footer.description3") %></p>
             <p><%= t("proposals.index.section_footer.description4") %></p>
             <p><%= t("proposals.index.section_footer.description5") %></p>
