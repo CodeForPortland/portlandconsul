@@ -25,9 +25,15 @@ Development started on [2015 July 15th](https://github.com/consul/consul/commit/
 
 ## Configuration for development and test environments
 
-**NOTE**: For more detailed instructions check the [docs](https://consul_docs.gitbooks.io/docs/)
+**NOTES**:
 
-Prerequisites: install git, Ruby 2.3.2, `bundler` gem, Node.js and PostgreSQL (>=9.4).
+* For more detailed instructions check the [docs](https://consul_docs.gitbooks.io/docs/)
+
+* If there are issues installing locally see the [troubleshooting section](doc/troubleshooting.md) for some common issues.
+
+* For help setting up a Rails environment the visit [gorails.com/setup](https://gorails.com/setup)
+
+**Prerequisites**: install git, Ruby 2.3.2, `bundler` gem, Node.js and PostgreSQL (>=9.4).
 
 ```bash
 git clone https://github.com/CodeForPortland/portlandconsul.git
