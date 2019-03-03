@@ -136,7 +136,7 @@ en:
         description: This forum for climate justice is for everyone to explore and discover how we can work together to reduce greenhouse gas emissions, increase energy efficiency, and create opportunities for workforce training to empower people of color and historically marginalized communities in the clean energy economy.
         help_text_1: "Write your ideas for climate justice and collaborate with the community to be successful. Help each other with suggestions for improvement. Start a climate action."
         help_text_2: "A proposal in this forum does not go into the potential projects to be funded by the Portland Clean Energy Fund. When you think a project fits the mission of the initiative, click on the Proposals page and the “Create a proposal” button to get started."
-        help_text_3: 'To contribute to the community forum, please sign up with %{org}, then write and prepare proactive responses to climate change'
+        help_text_3: 'To contribute to the community forum, please sign up with %{org}, then write and prepare proactive responses to climate change.'
     new:
       form:
         submit_button: Start a debate
@@ -201,12 +201,12 @@ en:
       ie: We have detected that you are browsing with Internet Explorer. For an enhanced experience, we recommend using %{firefox} or %{chrome}.
       ie_title: This website is not optimised for your browser
     footer:
-      pcef: Portland Clean Energy Fund 
+      pcef: Portland Clean Energy Fund
       pcef_url: https://www.portlandcleanenergyinitiative.com/
       cforpdx: Code for PDX
       cforpdx_url: http://www.codeforpdx.org
       latinxtech: Latinx Tech PDX
-      latinxtech_url: http://www.meetup.com/LatinxTechPDX/ 
+      latinxtech_url: http://www.meetup.com/LatinxTechPDX/
       accessibility: Accessibility
       conditions: Terms and Conditions of Use
       consul: CONSUL
