@@ -7,6 +7,7 @@ en:
     help:
       title: "%{org} is a platform for citizen participation"
       guide: "This guide explains what each of the %{org} sections are for and how they work."
+      guide: "You can contribute to the %{community_forum_link}, create %{proposals_link}, and offer support by %{voting_link}. This guide clarifies what the sections are for and how they work."
       menu:
         debates: "Community Forum"
         proposals: "Proposals"

@@ -9,6 +9,10 @@
   text-decoration: underline;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .locale-form .locale-switcher {
   background-color: $brand;
 }
