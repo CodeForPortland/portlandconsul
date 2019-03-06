@@ -182,7 +182,6 @@ en:
     proposal_notification: "Notification"
     spending_proposal: Spending proposal
     budget/investment: Investment
-    budget/group: Budget Group
     budget/heading: Budget Heading
     poll/shift: Shift
     poll/question/answer: Answer
@@ -228,8 +227,9 @@ en:
       administration_menu: Admin
       administration: Administration
       available_locales: Available languages
-      collaborative_legislation: Collaborative legislation
+      collaborative_legislation: Legislation processes
       debates: Debates
+      external_link_blog: Blog
       locale: 'Language:'
       logo: CONSUL logo
       management: Management
@@ -253,6 +253,13 @@ en:
         no_notifications: "You don't have new notifications"
     admin:
       watch_form_message: 'You have unsaved changes. Do you confirm to leave the page?'
+  legacy_legislation:
+    help:
+      alt: Select the text you want to comment and press the button with the pencil.
+      text: To comment this document you must %{sign_in} or %{sign_up}. Then select the text you want to comment and press the button with the pencil.
+      text_sign_in: login
+      text_sign_up: sign up
+      title: How I can comment this document?
   notifications:
     index:
       empty_notifications: You don't have new notifications.
@@ -428,6 +435,8 @@ en:
         guide: "Now you can share it so people can start supporting."
         edit: "Before it gets shared you'll be able to change the text as you like."
         view_proposal: Not now, go to my proposal
+      improve_info: "Improve your campaign and get more supports"
+      improve_info_link: "See more information"
       already_supported: You have already supported this proposal. Share it!
       comments:
         one: 1 comment
@@ -474,7 +483,8 @@ en:
       form:
         submit_button: Save changes
     share:
-      message: "I supported the proposal %{summary} in %{handle}. If you're interested, support it too!"
+      message: "I supported the proposal %{summary} in %{org}. If you're interested, support it too!"
+      message_mobile: "I supported the proposal %{summary} in %{handle}. If you're interested, support it too!"
   polls:
     all: "All"
     no_dates: "no date assigned"
@@ -492,9 +502,11 @@ en:
         paragraph6: "%{register_link} to be able to vote on proposals and contribute in the forum."
       filters:
         current: "Open"
+        incoming: "Incoming"
         expired: "Expired"
       title: "Polls"
       participate_button: "Participate in this poll"
+      participate_button_incoming: "More information"
       participate_button_expired: "Poll ended"
       no_geozone_restricted: "All city"
       geozone_restricted: "Districts"
@@ -522,6 +534,7 @@ en:
       signup: Sign up
       cant_answer_verify_html: "You must %{verify_link} in order to answer."
       verify_link: "verify your account"
+      cant_answer_incoming: "This poll has not yet started."
       cant_answer_expired: "This poll has finished."
       cant_answer_wrong_geozone: "This question is not available on your geozone."
       more_info_title: "More information"
@@ -661,6 +674,7 @@ en:
         see_more: See more recommendations
         hide: Hide recommendations
   social:
+    blog: "%{org} Blog"
     facebook: "%{org} Facebook"
     twitter: "%{org} Twitter"
     youtube: "%{org} YouTube"
@@ -807,8 +821,8 @@ en:
       unfeasible: Unfeasible investment projects can not be supported
       not_voting_allowed: Voting phase is closed
       different_heading_assigned:
-        one: "You can only support investment projects in %{count} district. You have already supported investments in %{supported_headings}."
-        other: "You can only support investment projects in %{count} districts. You have already supported investments in %{supported_headings}."
+        one: "You can only support investment projects in %{count} district"
+        other: "You can only support investment projects in %{count} districts"
   welcome:
     feed:
       most_active:

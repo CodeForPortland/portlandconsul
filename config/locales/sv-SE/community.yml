@@ -23,15 +23,15 @@ sv:
         participants: Deltagare
       sidebar:
         participate: Delta
-        new_topic: Skapa ämne
+        new_topic: Skapa inlägg
       topic:
         edit: Redigera inlägg
-        destroy: Ta bort ämne
+        destroy: Ta bort inlägg
         comments:
           zero: Inga kommentarer
           one: 1 kommentar
           other: "%{count} kommentarer"
-      author: Skribent
+      author: Förslagslämnare
       back: Tillbaka till %{community} %{proposal}
     topic:
       create: Skapa ett inlägg

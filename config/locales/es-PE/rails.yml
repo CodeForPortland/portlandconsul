@@ -10,18 +10,18 @@ es-PE:
       - sáb
     abbr_month_names:
       - 
-      - ene
-      - feb
-      - mar
-      - abr
-      - mayo
-      - jun
-      - jul
-      - ago
-      - sep
-      - oct
-      - nov
-      - dic
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
     day_names:
       - domingo
       - lunes
@@ -36,18 +36,18 @@ es-PE:
       short: "%d de %b"
     month_names:
       - 
-      - enero
-      - febrero
-      - marzo
-      - abril
-      - mayo
-      - junio
-      - julio
-      - agosto
-      - septiembre
-      - octubre
-      - noviembre
-      - diciembre
+      - January
+      - February
+      - March
+      - April
+      - May
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
   datetime:
     distance_in_words:
       about_x_hours:
@@ -149,7 +149,6 @@ es-PE:
         unit: "€"
     format:
       delimiter: "."
-      precision: 1
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -162,7 +161,6 @@ es-PE:
           thousand: mil
           trillion: billón
       format:
-        precision: 1
         significant: true
         strip_insignificant_zeros: true
   support:

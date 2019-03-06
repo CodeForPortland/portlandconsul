@@ -22,10 +22,10 @@ es-PE:
       tab:
         participants: Participantes
       sidebar:
-        participate: Empieza a participar
-        new_topic: Crear tema
+        participate: Participa
+        new_topic: Crea un tema
       topic:
-        edit: Guardar cambios
+        edit: Editar tema
         destroy: Eliminar tema
         comments:
           zero: Sin comentarios
@@ -40,11 +40,11 @@ es-PE:
         topic_title: Título
         topic_text: Texto inicial
         new:
-          submit_button: Crea un tema
+          submit_button: Crear tema
         edit:
-          submit_button: Editar tema
+          submit_button: Guardar cambios
         create:
-          submit_button: Crea un tema
+          submit_button: Crear tema
         update:
           submit_button: Actualizar tema
       show:

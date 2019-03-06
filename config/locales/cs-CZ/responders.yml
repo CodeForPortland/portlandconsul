@@ -1,9 +1,0 @@
-cs:
-  flash:
-    actions:
-      create:
-        debate: "Debata byla úspěšně vytvořena."
-      save_changes:
-        notice: Změny byly uloženy
-      destroy:
-        error: "Nelze odstranit"

@@ -92,6 +92,9 @@ module Abilities
 
       can [:create, :show], ProposalNotification, proposal: { author_id: user.id }
 
+      can :create, Annotation
+      can [:update, :destroy], Annotation, user_id: user.id
+
       can [:create], Topic
       can [:update, :destroy], Topic, author_id: user.id
 

@@ -8,10 +8,6 @@ module Globalizable
     def locales_not_marked_for_destruction
       translations.reject(&:_destroy).map(&:locale)
     end
-
-    def assign_model_to_translations
-      translations.each { |translation| translation.globalized_model = self }
-    end
   end
 
   class_methods do

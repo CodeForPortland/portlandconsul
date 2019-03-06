@@ -15,8 +15,8 @@ gl:
       form:
         phase_not_open: Esta fase non está aberta
         login_to_comment: Precisas %{signin} ou %{signup} para comentares.
-        signin: Entrar
-        signup: Rexístrate
+        signin: iniciar sesión
+        signup: rexistrarte
       index:
         title: Comentarios
         comments_about: Comentarios sobre
@@ -25,15 +25,15 @@ gl:
           one: "%{count} comentario"
           other: "%{count} comentarios"
       show:
-        title: Comentar
+        title: Comentario
       version_chooser:
         seeing_version: Comentarios por versión
-        see_text: Ver borrador do texto
+        see_text: Ver o borrador do texto
     draft_versions:
       changes:
         title: Cambios
         seeing_changelog_version: Resumo dos cambios da revisión
-        see_text: Ver o borrador do texto
+        see_text: Ver borrador do texto
       show:
         loading_comments: Cargando os comentarios
         seeing_version: Estás a ver unha revisión
@@ -62,15 +62,17 @@ gl:
         filter: Filtro
         filters:
           open: Procesos abertos
-          past: Pasados
+          next: Proximamente
+          past: Rematados
         no_open_processes: Non hai ningún proceso activo
+        no_next_processes: Non hai ningún proceso planeado
         no_past_processes: Non hai procesos rematados
         section_header:
           icon_alt: Icona de procesos lexislativos
           title: Procesos lexislativos
-          help: Axuda sobre procesos lexislativos
+          help: Axuda sobre os procesos lexislativos
         section_footer:
-          title: Axuda sobre os procesos lexislativos
+          title: Axuda sobre procesos lexislativos
           description: Participa nos debates e procesos previos ao se aprobar unha norma ou unha acción municipal. A túa opinión será tida en conta polo concello.
       phase_not_open:
         not_open: Esta fase aínda non está aberta
@@ -81,13 +83,11 @@ gl:
         see_latest_comments_title: Comentar e achegar neste proceso
       shared:
         key_dates: Datas chave
-        homepage: Páxina principal
-        debate_dates: o debate
+        debate_dates: Debate
         draft_publication_date: Publicación do borrador
-        allegations_dates: Comentarios
+        allegations_dates: Alegaciones
         result_publication_date: Publicación do resultado final
-        milestones_date: Seguindo
-        proposals_dates: Propostas cidadás
+        proposals_dates: Propostas
     questions:
       comments:
         comment_button: Publicar resposta
@@ -97,10 +97,10 @@ gl:
           leave_comment: Deixa a túa resposta
       question:
         comments:
-          zero: Ningún comentario
+          zero: Sen comentarios
           one: "%{count} comentario"
           other: "%{count} comentarios"
-        debate: o debate
+        debate: Debate
       show:
         answer_question: Enviar a resposta
         next_question: Seguinte pregunta
@@ -110,11 +110,11 @@ gl:
       participation:
         phase_not_open: Esta fase non está aberta
         organizations: As organizacións non poden participar no debate
-        signin: Entrar
-        signup: Rexístrate
+        signin: iniciar a sesión
+        signup: rexistrarte
         unauthenticated: Precisas %{signin} ou %{signup} para participares.
         verified_only: Só as persoas con contas verificadas poden participar no debate, %{verify_account}.
-        verify_account: verificar a túa conta
+        verify_account: verifica a túa conta
         debate_phase_not_open: A fase de debate xa rematou e neste momento non se aceptan as respostas
     shared:
       share: Compartir

@@ -10,10 +10,7 @@
     <%= markdown @process.additional_info if @process.additional_info %>
   </div>
 
-  <a class="button" data-toggle="additional_info"
-    <% if banner_color? %>
-      style="background:<%= process.font_color %>; color:<%= process.background_color %>;"
-    <% end %>>
+  <a class="button" data-toggle="additional_info">
     <%= t("legislation.processes.header.additional_info") %>
   </a>
 <% end %>

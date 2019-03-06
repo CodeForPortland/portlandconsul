@@ -10,12 +10,12 @@ id:
           document_type: "Tipe dokumen"
           document_number: "Nomor dokumen (termasuk huruf)"
           date_of_birth: "Tanggal lahir"
-          postal_code: "Kode pos"
+          postal_code: "Kode Pos"
         sms:
           phone: "Telepon"
           confirmation_code: "Kode konfirmasi"
         email:
-          recipient: "Surel"
+          recipient: "Email"
       officing/residence:
         document_type: "Tipe dokumen"
         document_number: "Nomor dokumen (termasuk huruf)"

@@ -5,10 +5,6 @@ he:
         unverified_user: אף משתתף/ת לא הצטרף/ה עדין
       show:
         title: חשבון משתמש/ת
-      edit:
-        back: חזרה
-        password:
-          password: סיסמה
     account_info:
       change_user: שינוי חשבון משתמש/ת
       document_number_label: 'מספר תעודה מזהה'
@@ -23,7 +19,7 @@ he:
     document_number: מספר תעודה מזהה
     document_type_label: סוג תעודה מזהה
     document_verifications:
-      already_verified: חשבון משתמש/ת זה אושר בעבר
+      already_verified: חשבון משתמש זה אושר
       has_no_account_html: ' כדי ליצור חשבון  %{link} נא ללחוץ על<b>''Register''</b> בחלק השמאלי העליון של המסך'
       link: מנהל מערכת
       in_census_has_following_permissions: 'משתמשים/ות אלו יכולים/ות להשתתף במערכת עם ההרשאות הבאות'
@@ -32,9 +28,8 @@ he:
       please_check_account_data: נא לבדוק בבקשה שהנתונים מעל מדויקים
       title: ' ניהול חשבון'
       under_age: "אינך בגיל המאפשר רישומך באתר"
-      verify: Verify
+      verify: נא לאשר
     email_label: דואר אלקטרוני
-    date_of_birth: תאריך לידה
     email_verifications:
       already_verified: חשבון משתמש/ת זה אושר בעבר
       choose_options: 'נא לבחור באחת מהאפשרויות הבאות:'
@@ -50,11 +45,11 @@ he:
       create_proposal: יצירת הצעה חדשה
       print_proposals: הדפסת הצעות
       support_proposals: תמיכה בהצעות
-      create_spending_proposal: יצירת הצעה תקציב
+      create_spending_proposal: יצירת הצעת תקציב
       print_spending_proposals: הדפסת הצעות תקציב
       support_spending_proposals: תמיכה בהצעות תקציב
       create_budget_investment: יצירת תקציב להשקעה
-      user_invites: שליחת הזמנות
+      user_invites: הזמנות של המשתמש/ת
     permissions:
       create_proposals: יצירת הצעות
       debates: השתתפות בדיונים
@@ -72,12 +67,6 @@ he:
       create_proposal: יצירת הצעה חדשה
       print:
         print_button: הדפסה
-      index:
-        title: תמיכה בהצעות
-    budgets:
-      create_new_investment: יצירת תקציב להשקעה
-      table_name: Name
-      table_phase: שלב
     budget_investments:
       alert:
         unverified_user: המשתמש אינו מאומת
@@ -110,9 +99,9 @@ he:
       erase_submit: מחיקת החשבון
     user_invites:
       new:
-        label: הודעה בדואר אלקטרוני
+        label: הודעות דואר אלקטרוני
         info: "הזנת כתובות דואר אלקטרוני מופרדות בפסיקים (',')"
-        submit: הזמנות של המשתמש/ת
+        submit: שליחת הזמנות
         title: הזמנות של המשתמש/ת
       create:
         success_html: <strong>%{count} ההזמנות</strong> נשלחו

@@ -5,7 +5,7 @@ fa:
     menu:
       title: ارزیابی
       budgets: بودجه مشارکتی
-      spending_proposals: هزینه های طرح ها
+      spending_proposals: هزینه های طرح
     budgets:
       index:
         title: بودجه مشارکتی
@@ -35,13 +35,12 @@ fa:
         table_title: عنوان
         table_heading_name: عنوان سرفصل
         table_actions: اقدامات
-        no_investments: "هیچ پروژه سرمایه گذاری وجود ندارد."
       show:
         back: برگشت
         title: پروژه سرمایه گذاری
         info: اطلاعات نویسنده
         by: ارسال شده توسط
-        sent: ارسال شده در
+        sent: ارسال شده توسط
         heading: سرفصل
         dossier: پرونده
         edit_dossier: ویرایش پرونده
@@ -91,7 +90,7 @@ fa:
         info: اطلاعات نویسنده
         association_name: انجمن
         by: ارسال شده توسط
-        sent: ارسال شده توسط
+        sent: ارسال شده در
         geozone: دامنه
         dossier: پرونده
         edit_dossier: ویرایش پرونده

@@ -12,7 +12,6 @@ class Debate < ActiveRecord::Base
   include Graphqlable
   include Relationable
   include Notifiable
-  include Randomizable
 
   acts_as_votable
   acts_as_paranoid column: :hidden_at
@@ -38,6 +37,7 @@ class Debate < ActiveRecord::Base
   scope :sort_by_confidence_score, -> { reorder(confidence_score: :desc) }
   scope :sort_by_created_at,       -> { reorder(created_at: :desc) }
   scope :sort_by_most_commented,   -> { reorder(comments_count: :desc) }
+  scope :sort_by_random,           -> { reorder("RANDOM()") }
   scope :sort_by_relevance,        -> { all }
   scope :sort_by_flags,            -> { order(flags_count: :desc, updated_at: :desc) }
   scope :sort_by_recommendations,  -> { order(cached_votes_total: :desc) }
@@ -86,10 +86,6 @@ class Debate < ActiveRecord::Base
 
   def total_votes
     cached_votes_total
-  end
-
-  def votes_score
-    cached_votes_score
   end
 
   def total_anonymous_votes

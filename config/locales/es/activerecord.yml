@@ -16,9 +16,6 @@ es:
       milestone/status:
         one: "Estado de seguimiento"
         other: "Estados de seguimiento"
-      progress_bar:
-        one: "Barra de progreso"
-        other: "Barras de progreso"
       comment:
         one: "Comentario"
         other: "Comentarios"
@@ -26,8 +23,8 @@ es:
         one: "Debate"
         other: "Debates"
       tag:
-        one: "Etiqueta"
-        other: "Etiquetas"
+        one: "Tema"
+        other: "Temas"
       user:
         one: "Usuario"
         other: "Usuarios"
@@ -48,7 +45,7 @@ es:
         other: "Gestores"
       newsletter:
         one: "Newsletter"
-        other: "Newsletters"
+        other: "Newsletter"
       vote:
         one: "Voto"
         other: "Votos"
@@ -65,7 +62,7 @@ es:
         one: "Propuesta ciudadana"
         other: "Propuestas ciudadanas"
       spending_proposal:
-        one: "Propuesta de inversión"
+        one: "Proyecto de inversión"
         other: "Proyectos de gasto"
       site_customization/page:
         one: Página
@@ -83,8 +80,8 @@ es:
         one: "Propuesta"
         other: "Propuestas"
       legislation/draft_versions:
-        one: "Versión del borrador"
-        other: "Versiones del borrador"
+        one: "Versión borrador"
+        other: "Versiones borrador"
       legislation/questions:
         one: "Pregunta"
         other: "Preguntas"
@@ -139,16 +136,9 @@ es:
       milestone/status:
         name: "Nombre"
         description: "Descripción (opcional)"
-      progress_bar:
-        kind: "Tipo"
-        title: "Título"
-        percentage: "Progreso"
-      progress_bar/kind:
-        primary: "Principal"
-        secondary: "Secundaria"
       budget/heading:
         name: "Nombre de la partida"
-        price: "Coste"
+        price: "Cantidad"
         population: "Población"
       comment:
         body: "Comentario"
@@ -166,7 +156,7 @@ es:
         terms_of_service: "Términos de servicio"
       user:
         login: "Email o nombre de usuario"
-        email: "Email"
+        email: "Correo electrónico"
         username: "Nombre de usuario"
         password_confirmation: "Confirmación de contraseña"
         password: "Contraseña"
@@ -176,7 +166,7 @@ es:
         official_level: "Nivel del cargo"
         redeemable_code: "Código de verificación por carta (opcional)"
       organization:
-        name: "Nombre de la organización"
+        name: "Nombre de organización"
         responsible_name: "Persona responsable del colectivo"
       spending_proposal:
         administrator_id: "Administrador"
@@ -214,7 +204,7 @@ es:
         slug: Slug
         status: Estado
         title: Título
-        updated_at: Última actualización
+        updated_at: última actualización
         more_info_flag: Mostrar en la página de ayuda
         print_content_flag: Botón de imprimir contenido
         locale: Idioma
@@ -234,20 +224,16 @@ es:
         summary: Resumen
         description: En qué consiste
         additional_info: Información adicional
-        start_date: Inicio
-        end_date: Fin
-        debate_start_date: Inicio
-        debate_end_date: Fin
-        draft_start_date: Inicio
-        draft_end_date: Fin
+        start_date: Fecha de inicio del proceso
+        end_date: Fecha de fin del proceso
+        debate_start_date: Fecha de inicio del debate
+        debate_end_date: Fecha de fin del debate
+        draft_start_date: Fecha de inicio del borrador
+        draft_end_date: Fecha de fin del borrador
         draft_publication_date: Fecha de publicación del borrador
-        allegations_start_date: Inicio
-        allegations_end_date: Fin
-        proposals_phase_start_date: Inicio
-        proposals_phase_end_date: Fin
+        allegations_start_date: Fecha de inicio de alegaciones
+        allegations_end_date: Fecha de fin de alegaciones
         result_publication_date: Fecha de publicación del resultado final
-        background_color: Color del fondo
-        font_color: Color del texto
       legislation/process/translation:
         title: Título del proceso
         summary: Resumen
@@ -255,7 +241,7 @@ es:
         additional_info: Información adicional
         milestones_summary: Seguimiento del proceso
       legislation/draft_version:
-        title: Título de la versión
+        title: Título de la version
         body: Texto
         changelog: Cambios
         status: Estado
@@ -281,7 +267,7 @@ es:
         title: Respuesta
         description: Descripción
       poll/question/answer/translation:
-        title: Respuesta
+        title: Título
         description: Descripción
       poll/question/answer/video:
         title: Título
@@ -305,7 +291,6 @@ es:
         description: Descripción
         link_text: Texto del enlace
         link_url: URL del enlace
-        columns: Número de columnas
       widget/card/translation:
         label: Etiqueta (opcional)
         title: Título
@@ -358,7 +343,7 @@ es:
             draft_end_date:
               invalid_date_range: tiene que ser igual o posterior a la fecha de inicio del borrador
             allegations_end_date:
-              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio de los comentarios
+              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio de las alegaciones
         proposal:
           attributes:
             tag_list:
