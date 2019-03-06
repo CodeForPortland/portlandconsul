@@ -3,14 +3,9 @@ class Budget < ActiveRecord::Base
   include Measurable
   include Sluggable
 
-  translates :name, touch: true
-  include Globalizable
-
   CURRENCY_SYMBOLS = %w(€ $ £ ¥).freeze
 
-  before_validation :assign_model_to_translations
-
-  validates_translation :name, presence: true
+  validates :name, presence: true, uniqueness: true
   validates :phase, inclusion: { in: Budget::Phase::PHASE_KINDS }
   validates :currency_symbol, presence: true
   validates :slug, presence: true, format: /\A[a-z0-9\-_]+\z/
@@ -110,8 +105,8 @@ class Budget < ActiveRecord::Base
     Budget::Phase::PUBLISHED_PRICES_PHASES.include?(phase)
   end
 
-  def publishing_prices_or_later?
-    publishing_prices? || balloting_or_later?
+  def valuating_or_later?
+    valuating? || publishing_prices? || balloting_or_later?
   end
 
   def balloting_process?

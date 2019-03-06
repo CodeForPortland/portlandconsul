@@ -14,9 +14,9 @@ pt-BR:
         publish_comment: Publicar comentário
       form:
         phase_not_open: Esta fase não está aberta
-        login_to_comment: Você precisa %{signin} ou %{signup} para deixar um comentário
+        login_to_comment: Você deve %{signin} ou %{signup} para comentar.
         signin: Iniciar sessão
-        signup: Inscreva-se
+        signup: Inscrever-se
       index:
         title: Comentários
         comments_about: Comentários sobre
@@ -25,13 +25,13 @@ pt-BR:
           one: "%{count} comentário"
           other: "%{count} comentários"
       show:
-        title: Comentar
+        title: Comentário
       version_chooser:
         seeing_version: Commments para versão
         see_text: Ver rascunho do texto
     draft_versions:
       changes:
-        title: Alterar
+        title: Alterações
         seeing_changelog_version: Resumo das mudanças de revisão
         see_text: Ver rascunho do texto
       show:
@@ -52,8 +52,6 @@ pt-BR:
         more_info: Mais informação e contexto
       proposals:
         empty_proposals: Não existem propostas
-        filters:
-          winners: Selecionado
       debate:
         empty_questions: Não há perguntas
         participate: Participar no debate
@@ -61,8 +59,10 @@ pt-BR:
         filter: Filtro
         filters:
           open: Processos abertos
-          past: Passados
+          next: Próximo
+          past: Passado
         no_open_processes: Não existem processos abertos
+        no_next_processes: Não existem processos planejados
         no_past_processes: Não existem processos terminados
         section_header:
           icon_alt: Ícone de processos legislativos
@@ -80,12 +80,10 @@ pt-BR:
         see_latest_comments_title: Comente sobre este processo
       shared:
         key_dates: Datas-chave
-        homepage: Página inicial
-        debate_dates: Debater
+        debate_dates: Debate
         draft_publication_date: Publicação de rascunho
         allegations_dates: Comentários
         result_publication_date: Publicação do resultado final
-        milestones_date: Seguindo
         proposals_dates: Propostas
     questions:
       comments:
@@ -96,10 +94,10 @@ pt-BR:
           leave_comment: Deixe sua resposta
       question:
         comments:
-          zero: Nenhum comentário
+          zero: Sem comentários
           one: "%{count} comentário"
           other: "%{count} comentários"
-        debate: Debater
+        debate: Debate
       show:
         answer_question: Enviar resposta
         next_question: Próxima pergunta
@@ -110,7 +108,7 @@ pt-BR:
         phase_not_open: Esta fase não está aberta
         organizations: As organizações não podem participar no debate
         signin: Iniciar sessão
-        signup: Inscreva-se
+        signup: Inscrever-se
         unauthenticated: Você precisa %{signin} ou %{signup} para participar.
         verified_only: Somente usuários verificados podem participar, %{verify_account}.
         verify_account: verifique sua conta

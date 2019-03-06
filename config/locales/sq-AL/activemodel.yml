@@ -2,7 +2,7 @@ sq:
   activemodel:
     models:
       verification:
-        residence: "Vendbanimi"
+        residence: "Rezident"
         sms: "SMS"
     attributes:
       verification:

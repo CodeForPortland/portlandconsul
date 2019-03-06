@@ -26,11 +26,9 @@
       </div>
     <% end %>
 
-    <% if feed_processes_enabled? %>
-      <div class="small-12 large-4 column">
-        <%= render "processes" %>
-      </div>
-    <% end %>
+    <div class="small-12 large-4 column">
+      <%= render "processes" %>
+    </div>
   </div>
 
   <% if feature?("user.recommendations") && (@recommended_debates.present? || @recommended_proposals.present?) %>

@@ -31,7 +31,6 @@ namespace :admin do
 
   resources :proposals, only: [:index, :show] do
     resources :milestones, controller: "proposal_milestones"
-    resources :progress_bars, except: :show, controller: "proposal_progress_bars"
   end
 
   resources :hidden_proposals, only: :index do
@@ -68,7 +67,6 @@ namespace :admin do
 
     resources :budget_investments, only: [:index, :show, :edit, :update] do
       resources :milestones, controller: 'budget_investment_milestones'
-      resources :progress_bars, except: :show, controller: "budget_investment_progress_bars"
       member { patch :toggle_selection }
     end
 
@@ -159,8 +157,6 @@ namespace :admin do
       end
       post '/answers/order_answers', to: 'questions/answers#order_answers'
     end
-
-    resource :active_polls, only: [:create, :edit, :update]
   end
 
   resources :verifications, controller: :verifications, only: :index do
@@ -207,7 +203,6 @@ namespace :admin do
       end
       resources :draft_versions
       resources :milestones
-      resources :progress_bars, except: :show
       resource :homepage, only: [:edit, :update]
     end
   end
@@ -219,9 +214,7 @@ namespace :admin do
   resources :geozones, only: [:index, :new, :create, :edit, :update, :destroy]
 
   namespace :site_customization do
-    resources :pages, except: [:show] do
-      resources :cards, only: [:index]
-    end
+    resources :pages, except: [:show]
     resources :images, only: [:index, :update, :destroy]
     resources :content_blocks, except: [:show]
     delete '/heading_content_blocks/:id', to: 'content_blocks#delete_heading_content_block', as: 'delete_heading_content_block'

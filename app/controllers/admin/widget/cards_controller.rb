@@ -1,19 +1,15 @@
 class Admin::Widget::CardsController < Admin::BaseController
   include Translatable
-  include ImageAttributes
 
   def new
-    if header_card?
-      @card = ::Widget::Card.new(header: header_card?)
-    else
-      @card = ::Widget::Card.new(site_customization_page_id: params[:page_id])
-    end
+    @card = ::Widget::Card.new(header: header_card?)
   end
 
   def create
     @card = ::Widget::Card.new(card_params)
     if @card.save
-      redirect_to_customization_page_cards_or_homepage
+      notice = "Success"
+      redirect_to admin_homepage_url, notice: notice
     else
       render :new
     end
@@ -26,7 +22,8 @@ class Admin::Widget::CardsController < Admin::BaseController
   def update
     @card = ::Widget::Card.find(params[:id])
     if @card.update(card_params)
-      redirect_to_customization_page_cards_or_homepage
+      notice = "Updated"
+      redirect_to admin_homepage_url, notice: notice
     else
       render :edit
     end
@@ -36,39 +33,27 @@ class Admin::Widget::CardsController < Admin::BaseController
     @card = ::Widget::Card.find(params[:id])
     @card.destroy
 
-    redirect_to_customization_page_cards_or_homepage
+    notice = "Removed"
+    redirect_to admin_homepage_url, notice: notice
   end
 
   private
 
-    def card_params
-      params.require(:widget_card).permit(
-        :link_url, :button_text, :button_url, :alignment, :header, :site_customization_page_id,
-        :columns,
-        translation_params(Widget::Card),
-        image_attributes: image_attributes
-      )
-    end
+  def card_params
+    image_attributes = [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy]
 
-    def header_card?
-      params[:header_card].present?
-    end
+    params.require(:widget_card).permit(
+      :link_url, :button_text, :button_url, :alignment, :header,
+      translation_params(Widget::Card),
+      image_attributes: image_attributes
+    )
+  end
 
-    def redirect_to_customization_page_cards_or_homepage
-      notice = t("admin.site_customization.pages.cards.#{params[:action]}.notice")
+  def header_card?
+    params[:header_card].present?
+  end
 
-      if @card.site_customization_page_id
-        redirect_to admin_site_customization_page_cards_path(page), notice: notice
-      else
-        redirect_to admin_homepage_url, notice: notice
-      end
-    end
-
-    def page
-      ::SiteCustomization::Page.find(@card.site_customization_page_id)
-    end
-
-    def resource
-      Widget::Card.find(params[:id])
-    end
+  def resource
+    Widget::Card.find(params[:id])
+  end
 end

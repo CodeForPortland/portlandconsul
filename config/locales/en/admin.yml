@@ -87,7 +87,7 @@ en:
         table_edit_budget: Edit
         edit_groups: Edit headings groups
         edit_budget: Edit budget
-        no_budgets: "There are no budgets."
+        no_budgets: "There are no open budgets."
       create:
         notice: New participatory budget created successfully!
       update:
@@ -182,6 +182,11 @@ en:
         tags_filter_all: All tags
         advanced_filters: Advanced filters
         placeholder: Search projects
+        sort_by:
+          placeholder: Sort by
+          id: ID
+          title: Title
+          supports: Supports
         filters:
           all: All
           without_admin: Without assigned admin
@@ -327,29 +332,6 @@ en:
         notice: Milestone status created successfully
       delete:
         notice: Milestone status deleted successfully
-    progress_bars:
-      manage: "Manage progress bars"
-      index:
-        title: "Progress bars"
-        no_progress_bars: "There are no progress bars"
-        new_progress_bar: "Create new progress bar"
-        primary: "Primary progress bar"
-        table_id: "ID"
-        table_kind: "Type"
-        table_title: "Title"
-        table_percentage: "Current progress"
-      new:
-        creating: "Create progress bar"
-      edit:
-        title:
-          primary: "Edit primary progress bar"
-          secondary: "Edit progress bar %{title}"
-      create:
-        notice: "Progress bar created successfully!"
-      update:
-        notice: "Progress bar updated successfully"
-      delete:
-        notice: "Progress bar deleted successfully"
     comments:
       index:
         filter: Filter
@@ -423,6 +405,8 @@ en:
           draft_phase_description: If this phase is active, the process won't be listed on processes index. Allow to preview the process and create content before the start.
           allegations_phase: Comments phase
           proposals_phase: Proposals phase
+          start: Start
+          end: End
           use_markdown: Use Markdown to format the text
           title_placeholder: The title of the process
           summary_placeholder: Short summary of the description
@@ -431,14 +415,14 @@ en:
           homepage: Description
           homepage_description: Here you can explain the content of the process
           homepage_enabled: Homepage enabled
-          banner_title: Header colors
-          color_help: Hexadecimal format
         index:
           create: New process
           delete: Delete
-          title: Collaborative legislation
+          title: Legislation processes
           filters:
-            active: Active
+            open: Open
+            next: Next
+            past: Past
             all: All
         new:
           back: Back
@@ -449,13 +433,12 @@ en:
           orders:
             id: Id
             title: Title
-            supports: Total supports
+            supports: Supports
         process:
           title: Process
           comments: Comments
           status: Status
-          start_date: Start date
-          end_date: End date
+          creation_date: Creation date
           status_open: Open
           status_closed: Closed
           status_planned: Planned
@@ -475,12 +458,12 @@ en:
           back: Back
           id: Id
           title: Title
-          supports: Total supports
+          supports: Supports
           select: Select
           selected: Selected
         form:
           custom_categories: Categories
-          custom_categories_description: Categories that users can select creating the proposal. Max 160 characteres by category.
+          custom_categories_description: Categories that users can select creating the proposal.
           custom_categories_placeholder: Enter the tags you would like to use, separated by commas (,) and between quotes ("")
       draft_versions:
         create:
@@ -760,46 +743,9 @@ en:
         send_pending: Send pending
         send_pending_notification: Pending notifications sent succesfully
       proposal_notification_digest:
-        title: "Proposal notification digest"
-        description: "Gathers all proposal notifications for an user in a single message, to avoid too much emails."
-        preview_detail: "Users will only recieve notifications from the proposals they are following"
-      budget_investment_created:
-        title: "Budget investment created"
-        description: "Sent when a user creates a budget investment."
-      budget_investment_selected:
-        title: "Budget investment selected"
-        description: "Sent to the author when its budget investment has been selected."
-      budget_investment_unfeasible:
-        title: "Budget investment unfeasible"
-        description: "Sent to the author when its budget investment has been marked as unfeasible."
-      budget_investment_unselected:
-        title: "Budget investment unselected"
-        description: "Sent to the author when its budget investment hasn't been selected for voting phase."
-      comment:
-        title: "Comment"
-        description: "Sent to the author when recieves a comment."
-      reply:
-        title: "Reply"
-        description: "Sent to the comment's author when recieves a reply."
-      direct_message_for_receiver:
-        title: "Private message receiver"
-        description: "Sent to the private message's receiver."
-      direct_message_for_sender:
-        title: "Private message sender"
-        description: "Sent to the private message's sender."
-      email_verification:
-        title: "Email verification"
-        description: "Sent to a new user to verify its account."
-      user_invite:
-        title: "User Invitation"
-        description: "Sent to the person that has been invited to register an account."
-      edit_info: "You can edit this email in"
-      message_title: "Message's Title"
-      message_body: "This is a sample of message's content."
-      alert:
-        no_investments: "There aren't any budget investment created. Some example data is needed in order to preview the email."
-        no_comments: "There aren't any comments created. Some example data is needed in order to preview the email."
-        no_replies: "There aren't any replies created. Some example data is needed in order to preview the email."
+        title: Proposal Notification Digest
+        description: Gathers all proposal notifications for an user in a single message, to avoid too much emails.
+        preview_detail: Users will only recieve notifications from the proposals they are following
     emails_download:
       index:
         title: Emails download
@@ -903,7 +849,6 @@ en:
       flash:
         create: "Shift added"
         destroy: "Shift removed"
-        unable_to_destroy: "Shifts with associated results or recounts cannot be deleted"
         date_missing: "A date must be selected"
       vote_collection: Collect Votes
       recount_scrutiny: Recount & Scrutiny
@@ -943,22 +888,13 @@ en:
         no_booths: "There are no booths assigned to this poll."
         table_name: "Name"
         table_location: "Location"
-    active_polls:
-      edit:
-        title: "Polls description"
-      form:
-        description:
-          text: "Description"
-          help_text: "This text will appear in the header of the polls page. It can be used to add a context to the open polls."
     polls:
       index:
-        title: "List of polls"
+        title: "List of active polls"
         no_polls: "There are no polls coming up."
         create: "Create poll"
         name: "Name"
         dates: "Dates"
-        start_date: "Start Date"
-        closing_date: "Closing Date"
         geozone_restricted: "Restricted to districts"
       new:
         title: "New poll"
@@ -1169,6 +1105,10 @@ en:
       flash:
         updated: Value updated
       index:
+        banners: Banner styles
+        banner_imgs: Banner images
+        no_banners_images: No banner images
+        no_banners_styles: No banner styles
         title: Configuration settings
         update_setting: Update
         feature_flags: Features
@@ -1224,7 +1164,6 @@ en:
       author: Author
       content: Content
       created_at: Created at
-      delete: Delete
     spending_proposals:
       index:
         geozone_filter_all: All zones
@@ -1485,23 +1424,6 @@ en:
           status_published: Published
           title: Title
           slug: Slug
-          cards_title: Cards
-          see_cards: See Cards
-        cards:
-          cards_title: cards
-          create_card: Create card
-          no_cards: There are no cards.
-          title: Title
-          description: Description
-          link_text: Link text
-          link_url: Link URL
-          columns_help: "Width of the card in number of columns. On mobile screens it's always a width of 100%."
-          create:
-            notice: "Card created successfully!"
-          update:
-            notice: "Card updated successfully"
-          destroy:
-            notice: "Card removed successfully"
     homepage:
       title: Homepage
       description: The active modules appear in the homepage in the same order as here.

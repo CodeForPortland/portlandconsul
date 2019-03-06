@@ -11,7 +11,7 @@ class DocumentsController < ApplicationController
         else
           flash[:alert] = t "documents.actions.destroy.alert"
         end
-        redirect_to request.referer
+        redirect_to params[:from]
       end
       format.js do
         if @document.destroy

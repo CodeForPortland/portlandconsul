@@ -2,7 +2,7 @@ fr:
   devise_views:
     confirmations:
       new:
-        email_label: Email
+        email_label: Courriel
         submit: Renvoyer les instructions
         title: Renvoyer les instructions de confirmation
       show:
@@ -16,7 +16,6 @@ fr:
       confirmation_instructions:
         confirm_link: Confirmer mon compte
         text: 'Vous pouvez confirmer votre courriel en cliquant sur le lien suivant :'
-        title: Bienvenue
         welcome: Bienvenue
       reset_password_instructions:
         change_link: Changer mon mot de passe
@@ -39,7 +38,7 @@ fr:
     organizations:
       registrations:
         new:
-          email_label: Email
+          email_label: Courriel
           organization_name_label: Nom de l'organisation
           password_confirmation_label: Confirmer le mot de passe
           password_label: Mot de passe
@@ -62,7 +61,7 @@ fr:
         password_label: Nouveau mot de passe
         title: Changer votre mot de passe
       new:
-        email_label: Email
+        email_label: Courriel
         send_submit: Envoyer les instructions
         title: Mot de passe oublié ?
     sessions:
@@ -80,10 +79,10 @@ fr:
         new_unlock: Vous n'avez pas reçu les instructions pour débloquer votre compte?
         signin_with_provider: Se connecter avec %{provider}
         signup: Vous n'avez pas encore de compte ? %{signup_link}
-        signup_link: S'inscrire
+        signup_link: S'enregistrer
     unlocks:
       new:
-        email_label: Email
+        email_label: Courriel
         submit: Renvoyer les instructions de déblocage
         title: Renvoyer les instructions de déblocage
     users:
@@ -97,7 +96,7 @@ fr:
         edit:
           current_password_label: Mot de passe actuel
           edit: Éditer
-          email_label: Email
+          email_label: Courriel
           leave_blank: Laissez vide si vous ne souhaitez pas le modifier
           need_current: Nous avons besoin de votre mot de passe actuel pour confirmer les modifications
           password_confirmation_label: Confirmer le nouveau mot de passe
@@ -106,7 +105,7 @@ fr:
           waiting_for: 'En attente de la confirmation de:'
         new:
           cancel: Annuler la connexion
-          email_label: Email
+          email_label: Courriel
           organization_signup: Représentez-vous une organisation ou un collectif? %{signup_link}
           organization_signup_link: Enregistrez-vous ici
           password_confirmation_label: Confirmer le mot de passe

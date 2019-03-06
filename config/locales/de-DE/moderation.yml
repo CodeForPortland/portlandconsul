@@ -46,33 +46,33 @@ de:
     menu:
       flagged_comments: Kommentare
       flagged_debates: Diskussionen
-      flagged_investments: Haushaltsinvestitionen
+      flagged_investments: Budgetinvestitionen
       proposals: Vorschläge
       proposal_notifications: Antrags-Benachrichtigungen
       users: Benutzer blockieren
     proposals:
       index:
-        block_authors: Autoren blockieren
+        block_authors: Autor blockieren
         confirm: Sind Sie sich sicher?
         filter: Filter
         filters:
           all: Alle
           pending_flag_review: Ausstehende Bewertung
-          with_ignored_flag: Als gelesen markieren
+          with_ignored_flag: Als gesehen markieren
         headers:
           moderate: Moderieren
           proposal: Vorschlag
-        hide_proposals: Anträge ausblenden
-        ignore_flags: Als gelesen markieren
-        order: Sortieren nach
+        hide_proposals: Vorschläge ausblenden
+        ignore_flags: als gesehen markieren
+        order: sortieren nach
         orders:
-          created_at: Neuste
-          flags: Am meisten markiert
+          created_at: neuestes
+          flags: am meisten markiert
         title: Vorschläge
     budget_investments:
       index:
         block_authors: Autoren blockieren
-        confirm: Sind Sie sich sicher?
+        confirm: Sind Sie sicher?
         filter: Filter
         filters:
           all: Alle
@@ -80,14 +80,14 @@ de:
           with_ignored_flag: Als gelesen markieren
         headers:
           moderate: Moderieren
-          budget_investment: Haushaltsinvestitionen
+          budget_investment: Budgetinvestitionen
         hide_budget_investments: Budgetinvestitionen verbergen
-        ignore_flags: Als gelesen markieren
+        ignore_flags: Als gesehen markieren
         order: Sortieren nach
         orders:
-          created_at: neuestes
+          created_at: Neuste
           flags: Am meisten markiert
-        title: Haushaltsinvestitionen
+        title: Budgetinvestitionen
     proposal_notifications:
       index:
         block_authors: Autoren blockieren
@@ -96,17 +96,17 @@ de:
         filters:
           all: Alle
           pending_review: Ausstehende Bewertung
-          ignored: Als gelesen markieren
+          ignored: Als gesehen markieren
         headers:
           moderate: Moderieren
-          proposal_notification: Benachrichtigung zu einem Vorschlag
-        hide_proposal_notifications: Vorschläge ausblenden
-        ignore_flags: Als gelesen markieren
+          proposal_notification: Antrags-Benachrichtigung
+        hide_proposal_notifications: Anträge ausblenden
+        ignore_flags: Als gesehen markieren
         order: Sortieren nach
         orders:
-          created_at: neuestes
+          created_at: Neuste
           moderated: Moderiert
-        title: Benachrichtigungen zu einem Vorschlag
+        title: Antrags-Benachrichtigungen
     users:
       index:
         hidden: Blockiert

@@ -1,4 +1,4 @@
-section "Creating collaborative legislation" do
+section "Creating legislation processes" do
   9.times do |i|
     Legislation::Process.create!(title: Faker::Lorem.sentence(3).truncate(60),
                                  description: Faker::Lorem.paragraphs.join("\n\n"),

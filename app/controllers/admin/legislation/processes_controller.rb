@@ -1,14 +1,12 @@
 class Admin::Legislation::ProcessesController < Admin::Legislation::BaseController
   include Translatable
-  include ImageAttributes
 
-  has_filters %w[active all], only: :index
+  has_filters %w{open next past all}, only: :index
 
   load_and_authorize_resource :process, class: "Legislation::Process"
 
   def index
-    @processes = ::Legislation::Process.send(@current_filter).order(start_date: :desc)
-                 .page(params[:page])
+    @processes = ::Legislation::Process.send(@current_filter).order('id DESC').page(params[:page])
   end
 
   def create
@@ -68,11 +66,8 @@ class Admin::Legislation::ProcessesController < Admin::Legislation::BaseControll
         :result_publication_enabled,
         :published,
         :custom_list,
-        :background_color,
-        :font_color,
         translation_params(::Legislation::Process),
-        documents_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
-        image_attributes: image_attributes
+        documents_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy]
       ]
     end
 
