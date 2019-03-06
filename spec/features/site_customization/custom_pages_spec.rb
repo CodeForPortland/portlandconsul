@@ -115,7 +115,7 @@ feature "Custom Pages" do
 
         visit help_path
 
-        expect(page).to have_content("Another custom page")
+        expect(page).to have_content("Portland Clean Energy Fund Language")
       end
 
       scenario "Not listed in more information page" do
