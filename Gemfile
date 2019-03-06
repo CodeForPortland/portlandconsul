@@ -54,7 +54,11 @@ gem 'unicorn', '~> 5.4.1'
 gem 'whenever', '~> 0.10.0', require: false
 gem 'globalize', '~> 5.0.0'
 gem 'globalize-accessors', '~> 0.2.1'
+<<<<<<< HEAD
 gem  'twilio-ruby', '~> 5.20'
+=======
+gem 'recipient_interceptor', '~> 0.2.0'
+>>>>>>> cce852d3035617724f9935624d6424a6206b4a6c
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-leaflet'
