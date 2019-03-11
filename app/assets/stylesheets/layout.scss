@@ -486,10 +486,6 @@ header {
   padding-bottom: 0;
   padding-top: 0;
 
-  @include breakpoint(medium) {
-    padding: 0;
-  }
-
   ul {
     background: none;
     padding-right: rem-calc(15);
